@@ -1,0 +1,19 @@
+1 - Set up the github repo
+    a) new enviornment(virtual)
+    b) setup.py
+    c) requirements.txt
+
+
+
+steps:
+1 - create virtualenvironment use cmd instead of powershell in the terminal
+    syntax: create ->conda create -p venv python==3.8 -y
+            activate -> conda activate C:\Users\hp\Desktop\Project\venv
+            deactivate -> conda deactivate
+
+2- push your code and create gitignore directly in the github -> go to github repo create new file name .gitignore choose lang as python and commit
+
+3 - create the setup.py and set requirements.txt and then run 
+     -> pip install -r requirements.txt
+     //when you run this you will create the Project.egg-info that'll make the whole project as a package
+
