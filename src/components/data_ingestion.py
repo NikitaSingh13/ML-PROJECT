@@ -1,0 +1,1 @@
+# data ingestion -> Data Ingestion is the process of collecting data from various sources and bringing it into a system (like a database, data warehouse, or machine learning pipeline) for further processing, analysis, or storage.

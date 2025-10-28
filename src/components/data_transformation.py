@@ -1,0 +1,1 @@
+# data transformation -> Data Transformation is the process of converting raw data (collected during data ingestion) into a clean, structured, and usable format for analysis or machine learning.
