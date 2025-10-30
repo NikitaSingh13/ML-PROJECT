@@ -2,6 +2,8 @@
 # but here the code written is custom exception handling means hand written code all
 
 import sys   #sys module proides various functions & variables that're used to manipulate diff parts of the python runtime environment
+from src.logger import logging
+
 
 def error_message_detail(error, error_detail: sys):
     _,_,exc_tb = error_detail.exc_info()
