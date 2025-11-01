@@ -17,6 +17,10 @@ from dataclasses import dataclass            # used to create data classes (for 
 from src.components.data_transformation import DataTransformation
 from src.components.data_transformation import DataTransformationConfig
 
+
+from src.components.model_trainer import ModelTrainerConfig
+from src.components.model_trainer import ModelTrainer
+
 # --------------------------------------------
 # Dataclass: used to store configuration data (paths of files in this case)
 # It automatically creates __init__() method, so we don't need to define it manually.
@@ -88,4 +92,7 @@ if __name__ == "__main__":
     train_data, test_data = obj.initiate_data_ingestion()       # call the function to start data ingestion
 
     data_transformation = DataTransformation()
-    data_transformation.initiate_data_transformation(train_data, test_data)
+    train_arr, test_arr,_ = data_transformation.initiate_data_transformation(train_data, test_data)
+
+    modeltrainer = ModelTrainer()
+    print(modeltrainer.initiate_model_trainer(train_arr, test_arr))

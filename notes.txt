@@ -27,3 +27,5 @@ steps:
 
 =>Pickling means: Converting a Python object into a binary file
                     so you can store it and load it back later.
+
+=>for every file we create a config file first where the path and everythinhg is given
