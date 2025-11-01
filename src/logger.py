@@ -1,11 +1,15 @@
-# Logging means recording messages about what your program is doing while it runs — so you can monitor, debug, and understand how your code behaves.
-
 import logging
 import os
 from datetime import datetime
 
+# Get the directory of this file
+LOG_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Go one level up (project root)
+ROOT_DIR = os.path.dirname(LOG_DIR)
+
 LOG_FILE = f"{datetime.now().strftime('%d_%m_%Y_%H_%M_%S')}.log"
-logs_path = os.path.join(os.getcwd(),"logs", LOG_FILE)
+logs_path = os.path.join(ROOT_DIR, "logs")
 os.makedirs(logs_path, exist_ok=True)
 
 LOG_FILE_PATH = os.path.join(logs_path, LOG_FILE)
@@ -14,8 +18,7 @@ logging.basicConfig(
     filename=LOG_FILE_PATH,
     format="[%(asctime)s ] %(lineno)d %(name)s - %(levelname)s - %(message)s",
     level=logging.INFO,
-
 )
 
-if __name__=="__main__":
+if __name__ == "__main__":
     logging.info("Logging has started")
