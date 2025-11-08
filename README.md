@@ -12,7 +12,7 @@ This project predicts a student's math exam score based on demographic and acade
 
 ## Demo
 
-[Live App Link Here](#) <!-- Replace with your deployed app link -->
+[Live App Link Here](https://student-performance-predictor-n107.onrender.com) <!-- Replace with your deployed app link -->
 
 ## Project Structure
 
