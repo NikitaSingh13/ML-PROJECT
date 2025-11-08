@@ -36,5 +36,5 @@ run - python app.py || then go to port http://127.0.0.1:5000/ && http://127.0.0.
 
 --------------------------------------------------------------------------------------------------
 
-deployement - aws elasticbeanstalk
+deployement - aws elasticbeanstalk| no bitch it is render gotcha-> create procfile and go deploy on render that's all
 

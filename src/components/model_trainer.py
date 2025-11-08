@@ -1,7 +1,6 @@
 import os
 import sys
 from dataclasses import dataclass
-from catboost import CatBoostRegressor
 from sklearn.ensemble import (
     AdaBoostRegressor,
     GradientBoostingRegressor,
@@ -41,7 +40,6 @@ class ModelTrainer:
                 # "Linear Regression": LinearRegression(),
                 "KNN Regressor": KNeighborsRegressor(),
                 "XGBRegressor": XGBRegressor(),
-                "CatBoosting Regressor": CatBoostRegressor(verbose=0),
                 "AdaBoost Regressor": AdaBoostRegressor(),
             }
 
@@ -57,11 +55,6 @@ class ModelTrainer:
                 "XGBRegressor": {
                     'learning_rate': [0.1, 0.05],
                     'n_estimators': [64, 128],
-                },
-                "CatBoosting Regressor": {
-                    'depth': [6, 8],
-                    'iterations': [50, 100],
-                    'learning_rate': [0.05, 0.1],
                 },
                 "AdaBoost Regressor": {
                     'learning_rate': [0.1, 0.05],
