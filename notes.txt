@@ -29,3 +29,12 @@ steps:
                     so you can store it and load it back later.
 
 =>for every file we create a config file first where the path and everythinhg is given
+
+------------------------------------------------------------------------------------------------------
+
+run - python app.py || then go to port http://127.0.0.1:5000/ && http://127.0.0.1:5000/predictdata
+
+--------------------------------------------------------------------------------------------------
+
+deployement - aws elasticbeanstalk
+
